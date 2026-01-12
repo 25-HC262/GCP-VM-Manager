@@ -1,0 +1,11 @@
+- name: hello
+  description: Say hello!
+
+- name: start
+  description: Getting Started the Server
+
+- name: stop
+  description: Shutting down the server
+
+- name: status
+  description: checking server status
