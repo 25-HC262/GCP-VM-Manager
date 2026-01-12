@@ -1,0 +1,5 @@
+flask
+google-cloud-compute
+discord-interactions
+functions-framework
+requests
