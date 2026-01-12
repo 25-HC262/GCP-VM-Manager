@@ -1,7 +1,6 @@
 import os
 import functions_framework
 from flask import Flask, jsonify, request
-from google.cloud import compute_v1
 from discord_interactions import verify_key_decorator
 
 # 환경 변수 설정
@@ -13,6 +12,7 @@ DISCORD_PUBLIC_KEY = os.environ.get("DISCORD_PUBLIC_KEY")
 app = Flask(__name__)
 
 def get_instance_client():
+    from google.cloud import compute_v1
     return compute_v1.InstancesClient()
 
 # 인스턴스 상태 조회
